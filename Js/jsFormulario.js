@@ -1,0 +1,1 @@
+arrayFormulario = array("Acciones","Nombre del elemento","Descripcion del elemento","Numero de serie","Estado","Prioridad");

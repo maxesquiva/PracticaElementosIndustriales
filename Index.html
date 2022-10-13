@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorizacion Industrial</title>
+    <script type="text/javascript" src="/Js/regex.js"></script>
 </head>
 
 <body style="background-color:rgb(192, 248, 230);">
@@ -14,29 +15,32 @@
     </header>
     <main>
         <p>
-        <form action="">
+        <form method="post" name="formulario" action="./ws/createElemento.php">
             <fieldset>
-                <p>Nombre Elemento: <input type="text" name="nombreElemento"></p>
+                <p>Nombre Elemento: <input type="text" name="nombreElemento" id="nombre"></p>
                 <p>Descripcion:<br>
-                    <textarea name="BoxDescription"></textarea>
+                    <textarea name="BoxDescription" id="texto"></textarea>
                 </p>
-                <p>Numero de serie: <input type="text" name="serailNumber"></p>
+                <p>Numero de serie: <input type="text" name="serialNumber" id="serie"></p>
                 <fieldset>
                     <legend>Estado del elemento: </legend>
                     <p>
-                        <label><input type="checkbox" value="on_checkbox"> Encender - ☑ / Apagar - ☐</label><br>
+                        <label><input type="checkbox" value="tamohActivoPapi" name="check" id="checkbox"> Encender - ☑ / Apagar - ☐</label><br>
                     </p>
                 </fieldset><br>
                 <fieldset>
                     <form>
                         <legend>Prioridad</legend>
                         <p>
-                            <input type="radio" name="Prioridad"> Alta<br>
-                            <input type="radio" name="Prioridad"> Media<br>
-                            <input type="radio" name="Prioridad"> Baja
+                            <input type="radio" name="Prioridad"id="Alta" value="Alta"> Alta<br>
+                            <input type="radio" name="Prioridad"id="Media" value="Alta"> Media<br>
+                            <input type="radio" name="Prioridad"id="Baja" value="Alta"> Baja
                         </p>
                     </form>
                 </fieldset>
+                <input type="submit" value="'.Guardar.'" name="operacion" id="enviar">
+                <input type="submit" value="'.VerDatos.'" name="operacion">
+
             </fieldset>
         </form>
         </p>

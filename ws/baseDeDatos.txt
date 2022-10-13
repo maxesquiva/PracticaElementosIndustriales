@@ -1,0 +1,5 @@
+{"nombreElemento":"manuel","descripcion":"hola","numeroDeSerie":"1234","estado":"tamohActivoPapi","prioridad":"Alta"}
+{"nombreElemento":"lavaro","descripcion":"hola que tal","numeroDeSerie":"5678","estado":"","prioridad":"Alta"}
+{"nombreElemento":"alavaro","descripcion":"hola que tal","numeroDeSerie":"5678","estado":"tamohActivoPapi","prioridad":null}
+{"nombreElemento":"alavaro","descripcion":"hola que tal","numeroDeSerie":"5678","estado":"tamohActivoPapi","prioridad":"Alta"}
+{"nombreElemento":"julian munuoz","descripcion":"es el alcalde el que elige aL vecino que sea el alcalde","numeroDeSerie":"12345","estado":"tamohActivoPapi","prioridad":"Alta"}
