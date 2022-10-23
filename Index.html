@@ -6,45 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorizacion Industrial</title>
-    <script type="text/javascript" src="/Js/regex.js"></script>
+    <link rel="stylesheet" href="./CSS/cssPg1.css">
+
 </head>
 
-<body style="background-color:rgb(192, 248, 230);">
+<body>
     <header>
-        <h1>Formulario de elementos industriales:</h1>
+        <div id="h1Form">
+            <h1>Formulario de elementos industriales:</h1>
+        </div>
     </header>
     <main>
-        <p>
-        <form method="post" name="formulario" action="./ws/createElemento.php">
-            <fieldset>
-                <p>Nombre Elemento: <input type="text" name="nombreElemento" id="nombre"></p>
-                <p>Descripcion:<br>
-                    <textarea name="BoxDescription" id="texto"></textarea>
-                </p>
-                <p>Numero de serie: <input type="text" name="serialNumber" id="serie"></p>
-                <fieldset>
-                    <legend>Estado del elemento: </legend>
-                    <p>
-                        <label><input type="checkbox" value="tamohActivoPapi" name="check" id="checkbox"> Encender - ☑ / Apagar - ☐</label><br>
-                    </p>
-                </fieldset><br>
-                <fieldset>
-                    <form>
-                        <legend>Prioridad</legend>
-                        <p>
-                            <input type="radio" name="Prioridad"id="Alta" value="Alta"> Alta<br>
-                            <input type="radio" name="Prioridad"id="Media" value="Alta"> Media<br>
-                            <input type="radio" name="Prioridad"id="Baja" value="Alta"> Baja
+        <div id="cajaForm">
+            <form method="post" name="formulario" action="./ws/createElemento.php">
+                <fieldset id="cajaElementos">
+                    <legend><h2>Registro de elementos</h2></legend>
+                    <div id="cajaDentro">
+                        <p>Nombre Elemento: <input type="text" name="nombreElemento" id="nombre"></p>
+                        <p>Descripcion:<br>
+                            <textarea name="BoxDescription" id="texto"></textarea>
                         </p>
-                    </form>
-                </fieldset>
-                <input type="submit" value="'.Guardar.'" name="operacion" id="enviar">
-                <input type="submit" value="'.VerDatos.'" name="operacion">
+                        <p>Numero de serie: <input type="text" name="serialNumber" id="serie"></p>
+                        <fieldset>
+                            <legend>Estado del elemento: </legend>
+                            <p>
+                                <label><input type="checkbox" value="tamohActivoPapi" name="check" id="checkbox">
+                                    Encender - ☑ / Apagar - ☐</label><br>
+                            </p>
+                        </fieldset><br>
+                        <fieldset>
+                            <form>
+                                <legend>Prioridad</legend>
+                                <p>
+                                    <input type="radio" name="Prioridad" id="Alta" value="Alta"> Alta<br>
+                                    <input type="radio" name="Prioridad" id="Media" value="Alta"> Media<br>
+                                    <input type="radio" name="Prioridad" id="Baja" value="Alta"> Baja
+                                </p>
+                            </form>
+                        </fieldset>
+                        <input type="submit" value="'.Guardar.'" name="operacion" id="enviar">
+                        <input type="submit" value="'.VerDatos.'" name="operacion">
 
-            </fieldset>
-        </form>
-        </p>
-        <br>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        </fieldset>
+
     </main>
     <footer>
         <p>
@@ -55,6 +64,7 @@
             <a href="pagina5.html" title="Mi enlace">Pagina5</a>
         </p>
     </footer>
+    <!-- <script type="text/javascript" src="/Js/regex.js"></script> -->
 </body>
 
 </html>
