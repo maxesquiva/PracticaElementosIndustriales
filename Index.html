@@ -7,45 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorizacion Industrial</title>
     <link rel="stylesheet" href="./CSS/cssPg1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
+        
         <div id="h1Form">
-            <h1>Formulario de elementos industriales:</h1>
+            <img src="./CSS/img/kisspng-spanners-computer-icons-tool-repair-5abbebc4337838.8078379015222650282108.png   " id="logotipo">
+            <h1>Formulario de elementos industriales</h1>
+        </div>
+        <div id="navegador">
+            <ul>
+                <li> <a href="pagina2.html" title="Mi enlace">Tabla</a></li>
+                <li> <a href="pagina3.html" title="Mi enlace">Pagina3</a></li>
+                <li> <a href="pagina4.html" title="Mi enlace">Pagina4</a></li>
+                <li> <a href="pagina5.html" title="Mi enlace">Pagina5</a></li>
+            </ul>
         </div>
     </header>
     <main>
+
         <div id="cajaForm">
             <form method="post" name="formulario" action="./ws/createElemento.php">
                 <fieldset id="cajaElementos">
-                    <legend><h2>Registro de elementos</h2></legend>
+                    <legend>
+                        <h2 id="tituloForm">Registro de elementos</h2>
+                    </legend>
+
                     <div id="cajaDentro">
-                        <p>Nombre Elemento: <input type="text" name="nombreElemento" id="nombre"></p>
+                        <p>Nombre Elemento: </p>
+                        <input type="text" name="nombreElemento" class="texto" id="nombre">
                         <p>Descripcion:<br>
-                            <textarea name="BoxDescription" id="texto"></textarea>
+                            <textarea name="BoxDescription" class="texto" id="texto"></textarea>
                         </p>
-                        <p>Numero de serie: <input type="text" name="serialNumber" id="serie"></p>
-                        <fieldset>
+                        <p>Numero de serie:</p>
+                        <input type="text" name="serialNumber" class="texto" id="serie">
+
+                    
                             <legend>Estado del elemento: </legend>
                             <p>
                                 <label><input type="checkbox" value="tamohActivoPapi" name="check" id="checkbox">
                                     Encender - ☑ / Apagar - ☐</label><br>
                             </p>
-                        </fieldset><br>
-                        <fieldset>
-                            <form>
-                                <legend>Prioridad</legend>
-                                <p>
-                                    <input type="radio" name="Prioridad" id="Alta" value="Alta"> Alta<br>
-                                    <input type="radio" name="Prioridad" id="Media" value="Alta"> Media<br>
-                                    <input type="radio" name="Prioridad" id="Baja" value="Alta"> Baja
-                                </p>
-                            </form>
-                        </fieldset>
-                        <input type="submit" value="'.Guardar.'" name="operacion" id="enviar">
-                        <input type="submit" value="'.VerDatos.'" name="operacion">
+                        <br>
+
+                        
+                            <legend>Prioridad</legend>
+                            <div>
+                                <input type="radio" name="Prioridad" id="Alta" value="Alta"> Alta<br>
+                                <input type="radio" name="Prioridad" id="Media" value="Alta"> Media<br>
+                                <input type="radio" name="Prioridad" id="Baja" value="Alta"> Baja
+                            </div>
+                    
+                        <div id="botonicosDeEnvio">
+                            <input type="submit" value="Guardar" name="operacion" class="btnForm" id="enviar">
+                            <input type="submit" value="VerDatos" name="operacion" class="btnForm" id="e">
+                        </div>
+                        
 
                     </div>
 
@@ -56,12 +76,13 @@
 
     </main>
     <footer>
-        <p>
-            Pagina1 -
+        <p id="copyright">
+            © Web Diseñada y elaborada by Manuel Esquiva Calvo.
+            <!-- Pagina1 -
             <a href="pagina2.html" title="Mi enlace">Pagina2 -</a>
             <a href="pagina3.html" title="Mi enlace">Pagina3 -</a>
             <a href="pagina4.html" title="Mi enlace">Pagina4 -</a>
-            <a href="pagina5.html" title="Mi enlace">Pagina5</a>
+            <a href="pagina5.html" title="Mi enlace">Pagina5</a> -->
         </p>
     </footer>
     <!-- <script type="text/javascript" src="/Js/regex.js"></script> -->

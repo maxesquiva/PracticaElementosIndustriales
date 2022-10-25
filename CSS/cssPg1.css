@@ -1,81 +1,158 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-    background-color: rgb(224, 167, 32);
-}
-header{
-    background-image: url(./img/fondoCaution.jpg);
-    width: 100%;
-    height: 100%;
-}
-main{
-   height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+
+body {
+
+    /*background-image: url(https://www.compudas.com/wp-content/uploads/2011/02/electronics.x44641.jpg);*/
+    background-image: url(https://saffroninteractive.com/wp-content/uploads/2018/12/minimalism.jpg);
+    background-size:cover;
+  
 }
 
-#h1Form{
-    color: white;
+header {
+   /*background-image: url(./img/fondo\ colores.jpg);*/
+    background-color: #F78222;
+   width: 100%;
+    height: 100%;
+    background-image:linear-gradient(#b56625 ,#F78222);
+}
+#logotipo{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+
+#h1Form {
+    font-family: Brush Script MT, cursive;
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 40px;
+}
+#navegador{
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 15px;
+    padding-top: 1px;
+}
+#navegador ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#navegador li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+#navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
     font-size: 20px;
 }
-#todoFormulario{  
-    margin-left: 30%;
-    margin-top: 10%;
-    height: 400px;
-    width: 50%;
-    background-color: brown;
-    border-radius: 10%;
+
+#navegador li a:hover {
+    background-color: #333333;
+    color: #ffffff;
 }
-#formulario{
-    text-align: center;
-    height: 50%;
-    width: 50%;
-}
-#nombre{
+
+
+/* input{
     padding: 0px;
-     font-size: 26px;
+     
      border-width: 3px;
      border-color: #CCCCCC;
      background-color: #FFFFFF;
      color: #000000;
      border-style: solid;
-     border-radius: 19px;
+     border-radius: 15px;
      box-shadow: -3px 9px 11px rgba(66,66,66,.59);
      text-shadow: 0px 0px 5px rgba(66,66,66,.75);
-   }
-    #nombre:focus {
-        outline:none;
-   }
-#cajaForm{
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 10%;
+   } */
+
+
+
+.texto {
+    padding: 0px;
+    font-size: 15px;
+    border-width: 3px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    padding-top: 7px ;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    color: #000000;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: -3px 9px 11px rgba(66, 66, 66, .59);
+    text-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
 }
-#cajaElementos{
-    width: 600px;
-    height: 400px;
-    margin-left: 150px;
+
+
+#cajaForm {
+   
+    background-color: rgba(0, 0, 0, 0.505);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+fieldset{
+    border-color: rgba(200, 82, 230, 0.178);
+    border-radius: 30px;
+    text-align: center;
+
+}
+#tituloForm{
+   font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Brush Script MT, cursive;
 }
 #cajaDentro{
-    margin-left: 35px;
-    margin-top: 50px;
-    margin-right: 35px;
+    background-color: #faa764;
+    padding-left: 20px;
+    padding-top:20px;
+    padding-bottom: 20px; 
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+}
+#botonicosDeEnvio{
     
 }
 
-footer
-{
-        text-align: center;
-        font-family: sans-serif;
-        background-color:red ;
-        width: 100%;
-        height: 30px;
-        bottom: 0;
-        position:fixed;
-    
+.btnForm {
+    color: #000000;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color:#e77a21;
+    margin-left: 10px;
+ 
+}
+footer {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.745);
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    position: fixed;
+
+}
+#copyright{
+ padding-top: 10px;
+    color: #ffffff;
 }

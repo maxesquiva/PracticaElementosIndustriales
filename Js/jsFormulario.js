@@ -28,7 +28,7 @@ const formulario = [{
 const $cuerpoTabla = document.querySelector("#cuerpoTabla");
 formulario.forEach(formulario => {
     const $tr = document.createElement("tr");
-    $tr.setAttribute("id", "borrarTr")//asi proporcionamos atributos a los elementos que se crean.
+    $tr.setAttribute("id", "trCreado")//asi proporcionamos atributos a los elementos que se crean.
 
     let $boton = document.createElement("button");
     $boton.textContent = formulario.boton;
@@ -38,22 +38,27 @@ formulario.forEach(formulario => {
     $tdNombre.textContent = formulario.NombreElemento;
     $tr.appendChild($tdNombre);
     $tdNombre.setAttribute("id", "nombre")
+    $tdNombre.setAttribute("class", "tdCreado")
 
     let $tdDescripcion = document.createElement("td");
     $tdDescripcion.textContent = formulario.descripcion;
     $tr.appendChild($tdDescripcion);
+    $tdDescripcion.setAttribute("class", "tdCreado")
 
     let $tdNumSerie = document.createElement("td");
     $tdNumSerie.textContent = formulario.NumeroSerie;
     $tr.appendChild($tdNumSerie);
+    $tdNumSerie.setAttribute("class", "tdCreado")
 
     let $tdEstado = document.createElement("td");
     $tdEstado.textContent = formulario.Estado;
     $tr.appendChild($tdEstado);
+    $tdEstado.setAttribute("class", "tdCreado")
 
     let $tdPrioridad = document.createElement("td");
     $tdPrioridad.textContent = formulario.Prioridad;;
     $tr.appendChild($tdPrioridad);
+    $tdPrioridad.setAttribute("class", "tdCreado")
 
     $cuerpoTabla.appendChild($tr);
 

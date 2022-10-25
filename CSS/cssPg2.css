@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F78222;
+    width: 100%;
+     height: 100%;
+     background-image:linear-gradient(#b56625 ,#F78222);
+}
+body{
+    background-image: url(https://saffroninteractive.com/wp-content/uploads/2018/12/minimalism.jpg);
+    background-size:cover;
+}
+#logotipo{
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+
+#h1Form {
+    font-family: Brush Script MT, cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+}
+#navegador{
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 15px;
+    padding-top: 1px;
+}
+#navegador ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#navegador li {
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+#navegador li a {
+    padding: 2px 7px 2px 7px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navegador li a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+
+#filtroInput{
+    padding: 20px;
+    margin-left:250px ;
+    
+}
+#filtrar{
+    padding: 0px;
+    font-size: 15px;
+    border-width: 3px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    padding-top: 7px ;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    color: #000000;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: -3px 9px 11px rgba(66, 66, 66, .59);
+    text-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+}
+
+
+.tabla{
+    background-color: rgba(94, 94, 94, 0.507);
+    padding: 20px;
+    margin-left:400px ;
+    margin-bottom: 40px;
+    margin-right: 400px;
+    margin-top: 35px;
+    border-radius: 20px;
+}
+
+.claseTR{
+    background-color:hotpink;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#cuerpoTabla{
+    background-color: ivory;
+    text-align: center;  
+    padding: 20px; 
+}
+.tdCreado{
+    background-color: #fea052;
+    font-family: 'Roboto', sans-serif;
+}
+
+.claseTH{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+footer {
+    color: #fffbfb;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.771);
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    position: fixed;
+
+}
+#copyright{
+    padding-top: 10px;
+       color: #ffffff;
+   }

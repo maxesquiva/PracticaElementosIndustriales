@@ -5,28 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/cssPg2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body style="background-color:rgb(192, 248, 230);">
     <header>
-        <h2>Formulario</h2>
+        <div id="h1Form">
+            <img src="./CSS/img/kisspng-spanners-computer-icons-tool-repair-5abbebc4337838.8078379015222650282108.png   " id="logotipo">
+            <h1>Tabla-bla-bla</h1>
+        </div>
+        <div id="navegador">
+            <ul>
+                <li> <a href="Index.html" title="Mi enlace">Formulario</a></li>
+                <li> <a href="pagina3.html" title="Mi enlace">Pagina3</a></li>
+                <li> <a href="pagina4.html" title="Mi enlace">Pagina4</a></li>
+                <li> <a href="pagina5.html" title="Mi enlace">Pagina5</a></li>
+            </ul>
+        </div>
     </header>
-    <main>
-        <p>
-        <input type="text" id="filtrar" name="filtrar" placeholder="Filtrar">
 
-        <table class="default" id="tabla" border="1px">
-            <tr>
-                <th>Acciones</th>
-                <th>Nombre del elemento</th>
-                <th>Descripcion del elemento</th>
-                <th>Numero de serie</th>
-                <th>Estado</th>
-                <th>Prioridad</th>
-            </tr>
-            <tr>
-                <!-- <th>
+    <main>
+        <div class="tabla">
+            <div id="filtroInput">
+                <input type="text" id="filtrar" name="filtrar" placeholder="Filtrar">
+            </div>
+            
+            <table class="default" id="tabla" border="1px">
+                <tr class="claseTR">
+                    <th class="claseTH">Acciones</th>
+                    <th class="claseTH">Nombre del elemento</th>
+                    <th class="claseTH">Descripcion del elemento</th>
+                    <th class="claseTH">Numero de serie</th>
+                    <th class="claseTH">Estado</th>
+                    <th class="claseTH">Prioridad</th>
+                </tr>
+                <tr>
+                    <!-- <th>
                     <input type="button" value="X">
                 </th>
                 <th> Control de humo</th>
@@ -59,24 +75,26 @@
                 <td>Encendido</td>
                 <td>Alta</td>
             </tr> -->
-             <tbody id="cuerpoTabla">
-            
-            </tbody>
-            
-        </table>
-        </p>
+                    <tbody id="cuerpoTabla">
+
+                    </tbody>
+
+            </table>
+        </div>
         <br>
     </main>
+
     <Footer>
-        <p>
-            <a href="Index.html" title="Mi enlace">Pagina1 -</a>
+        <p id="copyright">
+            © Web Diseñada y elaborada by Manuel Esquiva Calvo.
+            <!-- <a href="Index.html" title="Mi enlace">Pagina1 -</a>
             Pagina2 -
             <a href="pagina3.html" title="Mi enlace">Pagina3 -</a>
             <a href="pagina4.html" title="Mi enlace">Pagina4 -</a>
-            <a href="pagina5.html" title="Mi enlace">Pagina5</a>
+            <a href="pagina5.html" title="Mi enlace">Pagina5</a> -->
         </p>
     </Footer>
-    <script src="./Js/jsFormulario.js"  language="javascript" type="text/javascript"></script>
+    <script src="./Js/jsFormulario.js" language="javascript" type="text/javascript"></script>
 </body>
 
 </html>
