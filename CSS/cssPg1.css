@@ -6,20 +6,19 @@
 
 body {
 
-    /*background-image: url(https://www.compudas.com/wp-content/uploads/2011/02/electronics.x44641.jpg);*/
     background-image: url(https://saffroninteractive.com/wp-content/uploads/2018/12/minimalism.jpg);
-    background-size:cover;
-  
+    background-size: cover;
+
 }
 
 header {
-   /*background-image: url(./img/fondo\ colores.jpg);*/
     background-color: #F78222;
-   width: 100%;
+    width: 100%;
     height: 100%;
-    background-image:linear-gradient(#b56625 ,#F78222);
+    background-image: linear-gradient(#b56625, #F78222);
 }
-#logotipo{
+
+#logotipo {
     width: 100px;
     height: 100px;
     padding-top: 10px;
@@ -32,11 +31,13 @@ header {
     text-align: center;
     font-size: 40px;
 }
-#navegador{
+
+#navegador {
     background-color: rgb(0, 0, 0);
     padding-bottom: 15px;
     padding-top: 1px;
 }
+
 #navegador ul {
     list-style-type: none;
     text-align: center;
@@ -63,29 +64,13 @@ header {
     color: #ffffff;
 }
 
-
-/* input{
-    padding: 0px;
-     
-     border-width: 3px;
-     border-color: #CCCCCC;
-     background-color: #FFFFFF;
-     color: #000000;
-     border-style: solid;
-     border-radius: 15px;
-     box-shadow: -3px 9px 11px rgba(66,66,66,.59);
-     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
-   } */
-
-
-
 .texto {
     padding: 0px;
     font-size: 15px;
     border-width: 3px;
     border-color: #CCCCCC;
     background-color: #FFFFFF;
-    padding-top: 7px ;
+    padding-top: 7px;
     padding-bottom: 7px;
     margin-bottom: 10px;
     color: #000000;
@@ -97,7 +82,7 @@ header {
 
 
 #cajaForm {
-   
+
     background-color: rgba(0, 0, 0, 0.505);
     padding-bottom: 20px;
     padding-left: 20px;
@@ -106,31 +91,32 @@ header {
     margin-left: 500px;
     margin-right: 500px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 78px;
     border-radius: 30px;
 }
-fieldset{
+
+fieldset {
     border-color: rgba(200, 82, 230, 0.178);
     border-radius: 30px;
     text-align: center;
 
 }
-#tituloForm{
-   font-size: 50px;
+
+#tituloForm {
+    font-size: 50px;
     color: rgb(255, 255, 255);
     font-family: Brush Script MT, cursive;
 }
-#cajaDentro{
+
+#cajaDentro {
     background-color: #faa764;
     padding-left: 20px;
-    padding-top:20px;
-    padding-bottom: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     border-radius: 30px;
 }
-#botonicosDeEnvio{
-    
-}
+
 
 .btnForm {
     color: #000000;
@@ -138,21 +124,34 @@ fieldset{
     margin-top: 15px;
     padding: 5px;
     border-radius: 20px;
-    background-color:#e77a21;
+    background-color: #e77a21;
     margin-left: 10px;
- 
+
 }
+
 footer {
     text-align: center;
     font-family: sans-serif;
     background-color: rgba(0, 0, 0, 0.745);
     width: 100%;
-    height: 30px;
+    height: 50px;
     bottom: 0;
     position: fixed;
+    color: #ffffff;
+
+
 
 }
-#copyright{
- padding-top: 10px;
+
+footer a {
+    padding: 19px;
+    color: #fffbfb;
+    margin-top: 2px;
+
+}
+
+#copyright {
+    margin-top: 1px;
+    padding-top: 10px;
     color: #ffffff;
 }

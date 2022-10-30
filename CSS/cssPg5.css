@@ -5,15 +5,13 @@
 }
 
 body {
-
-    /*background-image: url(https://www.compudas.com/wp-content/uploads/2011/02/electronics.x44641.jpg);*/
     background-image: url(https://saffroninteractive.com/wp-content/uploads/2018/12/minimalism.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 header {
-    /*background-image: url(./img/fondo\ colores.jpg);*/
     background-color: #F78222;
     width: 100%;
     height: 100%;
@@ -77,18 +75,18 @@ header {
 .div1 {
     grid-area: 1 / 1 / 3 / 2;
     background-color: rgb(255, 174, 127);
-    
 }
-#foto{
+
+#foto {
     border: 3px solid #000;
     border-radius: 30px;
     width: 77%;
     height: 94%;
-    /* padding: 50px; */
     margin-top: 10px;
     margin-left: 50px;
 }
-#parrafo{
+
+#parrafo {
     font-family: 'Roboto', sans-serif;
     background-color: #f78222ee;
     font-size: 30px;
@@ -97,19 +95,19 @@ header {
     margin-right: 150px;
     border-radius: 30px;
 }
+
 .div2 {
     grid-area: 1 / 2 / 3 / 3;
-    /* background-color: rgb(246, 255, 127); */
 }
 
 .div3 {
     grid-area: 3 / 1 / 4 / 3;
-    /* background-color: aquamarine; */
 }
-#video{
- margin-left: 70px;
- margin-top: 10px;
- margin-bottom: 50px;
+
+#video {
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 
@@ -124,13 +122,26 @@ footer {
     position: fixed;
 
 }
-footer a{
-    padding: 5px;
+
+footer {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.745);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    color: #ffffff;
+}
+
+footer a {
+    padding: 19px;
     color: #fffbfb;
+    margin-top: 2px;
 }
 
 #copyright {
-    margin-top: 2px;
+    margin-top: 1px;
     padding-top: 10px;
     color: #ffffff;
 }
