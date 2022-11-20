@@ -97,22 +97,6 @@ function filtro() {
         } else {
             tr[i].style.display = "";
         }
-        // if (filter.length >= 3) {
-        //     //crear otra variable una que recoja el 0 y otra que recoja el 1
-        //     td = tr[i].getElementsByTagName("td")[0]; //cogemos los value de  nombre[0] y descripcion[1].
-        //     td1 = tr[i].getElementsByTagName("td")[0];
-        //     if (td || td1) {
-        //         txtValue = td.textContent || td.innerText; // 
-        //         //pasamos a mayuscula el contenido para determinar las coincidencias con lo que le metemmos por input.
-        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        //             tr[i].style.display = "";
-        //         } else {
-        //             tr[i].style.display = "none";
-        //         }
-        //     }
-        // } else {
-        //     tr[i].style.display = "";
-        // }
     }
 }
 
