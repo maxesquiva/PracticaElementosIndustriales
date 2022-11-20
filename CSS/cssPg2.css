@@ -142,3 +142,24 @@ footer a {
     padding-top: 10px;
     color: #ffffff;
 }
+#botonx {
+    background: #D97524;
+    background-image: url('http://res.freestockphotos.biz/pictures/15/15107-illustration-of-a-red-close-button-pv.png');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 39px;
+    border-radius: 900px;
+    margin-top: 40px;
+    height: 23px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+
+   #botonx:hover
+   {
+    width: 75px;
+    height: 75px;
+   }
