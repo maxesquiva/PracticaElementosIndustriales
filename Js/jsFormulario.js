@@ -83,7 +83,7 @@ function filtro() {
 
         if (filter.length >= 3) {
             //crear otra variable una que recoja el 0 y otra que recoja el 1
-            td = tr[i].getElementsByClassName("tdCreado")[1]; //cogemos los value de  nombre[0] y descripcion[1].
+            td = tr[i].getElementsByTagName("td")[1]; //cogemos los value de  nombre[0] y descripcion[1].
             td1 = tr[i].getElementsByTagName("td")[2];
             if (td || td1) {
                 txtValue = td.textContent || td.innerText; // 
