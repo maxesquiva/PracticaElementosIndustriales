@@ -67,28 +67,26 @@ formulario.forEach(formulario => {
     };
 });
 
-
 function filtro() {
 
-    var input, filter, table, tr, td, i, txtValue;
+    var input, filter, table, tr, td, i, txtValue, txtValue1;
     input = document.getElementById("filtrar");
     filter = input.value.toUpperCase();
     table = document.getElementById("cuerpoTabla");
     tr = table.getElementsByTagName("tr");
     //recorre el array empezando por la posicion 0 y 1 y busca coincidencias con lo escritio en el input.
 
-
-    
     for (i = 0; i < tr.length; i++) {
 
         if (filter.length >= 3) {
             //crear otra variable una que recoja el 0 y otra que recoja el 1
-            td = tr[i].getElementsByTagName("td")[1]; //cogemos los value de  nombre[0] y descripcion[1].
-            td1 = tr[i].getElementsByTagName("td")[2];
-            if (td || td1) {
+            td = tr[i].getElementsByTagName("td")[0]; //cogemos los value de  nombre[0] y descripcion[1].
+            td1 = tr[i].getElementsByTagName("td")[1];
+            if (td && td1) {
                 txtValue = td.textContent || td.innerText; // 
+                txtValue1 = td1.textContent || td1.innerText;
                 //pasamos a mayuscula el contenido para determinar las coincidencias con lo que le metemmos por input.
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                if ((txtValue.toUpperCase().indexOf(filter) > -1) || (txtValue1.toUpperCase().indexOf(filter)> -1)) {
                     tr[i].style.display = "";
                 } else {
                     tr[i].style.display = "none";
@@ -128,4 +126,5 @@ for(td of tds) {
         e.parentElement.textContent=e.value;
     }
 }
+
 document.getElementById("filtrar").addEventListener("keyup", filtro); //KeyUp ejecuta la funcion filtrar cuando se pulsa la tecla.
