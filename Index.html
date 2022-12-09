@@ -20,25 +20,35 @@
     <main>
 
         <div id="cajaForm">
-            <form method="post" name="formulario" action="./ws/createElemento.php">
+            <form method="post" name="formulario" id="frm">
                 <fieldset id="cajaElementos">
                     <legend>
                         <h2 id="tituloForm">Registro de elementos</h2>
                     </legend>
 
                     <div id="cajaDentro">
+                        <!-- <form action="subscribe.php" method="POST">
+                            Name
+                            <input type="text" name="name" />
+                        
+                            Email
+                            <input type="email" name="email" required />
+                        
+                            <button type="submit">Submit</button>
+                        </form> -->
                         <p>Nombre Elemento: </p>
-                        <input type="text" name="nombreElemento" class="texto" id="nombre" name="nombre">
+                        <input type="text" name="nombre" class="texto" id="nombre">
+                        
                         <p>Descripcion:<br>
-                            <textarea name="BoxDescription" class="texto" id="texto" name="descricion"></textarea>
+                            <textarea name="descripcion" class="texto" id="descripcion"></textarea>
                         </p>
                         <p>Numero de serie:</p>
-                        <input type="text" name="serialNumber" class="texto" id="serie" name="serialNumber">
+                        <input type="text" name="nserie" class="texto" id="nserie">
 
                     
                             <legend>Estado del elemento: </legend>
                             <p>
-                                <label><input type="checkbox" value="tamohActivoPapi" name="check" id="checkbox" name="estadoElemento">
+                                <label><input type="checkbox" value="tamohActivoPapi" name="estado" id="estado">
                                     Encender - ☑ / Apagar - ☐</label><br>
                             </p>
                         <br>
@@ -46,13 +56,13 @@
                         
                             <legend>Prioridad</legend>
                             <div>
-                                <input type="radio" name="Prioridad" id="Alta" value="Alta" name="prioridad"> Alta<br>
-                                <input type="radio" name="Prioridad" id="Media" value="Alta" name="prioridad"> Media<br>
-                                <input type="radio" name="Prioridad" id="Baja" value="Alta" name="prioridad"> Baja
+                                <input type="radio" name="prioridad" id="prioridad" value="Alta"> Alta<br>
+                                <input type="radio" name="prioridad" id="prioridad" value="Alta"> Media<br>
+                                <input type="radio" name="prioridad" id="prioridad" value="Alta"> Baja
                             </div>
                     
                         <div id="botonicosDeEnvio">
-                            <input type="submit" value="Guardar" name="operacion" class="btnForm" id="enviar">
+                            <input type="submit" value="Guardar"  name="operacion" class="btnForm" id="enviar">
                             <input type="submit" value="VerDatos" name="operacion" class="btnForm" id="e">
                         </div>
                         
@@ -75,7 +85,8 @@
             <p id="copyright">© Web Diseñada y elaborada by Manuel Esquiva Calvo.</p>
         </div >
     </footer>
-    <!-- <script type="text/javascript" src="/Js/regex.js"></script> -->
+    <script defer src="./Js/guardarDatos.js" language="javascript" type="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

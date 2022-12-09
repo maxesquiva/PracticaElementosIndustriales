@@ -25,6 +25,7 @@
                 <input type="text" id="filtrar" name="filtrar" placeholder="Filtrar">
             </div>
             
+            
             <table class="default" id="tabla" border="1px">
                 <tr class="claseTR">
                     <th class="claseTH">Acciones</th>
@@ -42,8 +43,24 @@
             </table>
         </div>
         <br>
+        
     </main>
 
+    <div id="formEdit">
+        <form id="formulario">
+            <div>NombreElemento: <input type="text" name="nombre" id="NombreElemento"></div>
+            <div>Descripcion: <input type=text id="desElemento" name="descripcion"></div>
+            <div>Num Serie: <input type=text id="numSerie" name="numero"></div>
+            <div><legend><b>Estado: Activar/desactivar</b></legend>
+                <input type="checkbox" id="checkbox" value="Activo" name="estado"></div>
+            <div> <legend><b>Prioridad</b></legend>
+                <input type="radio" id="alta" name="prioridad" value="Alta">Alta
+                <input type="radio" id="media" name="prioridad" value="Media">Media
+                <input type="radio" id="baja" name="prioridad" value="Baja">Baja
+            </div>
+            <input type="submit" id="actualizar" value="actualizar"/>    
+        </form>
+    </div>
     <Footer>
         <div>
             <a href="Index.html" title="Mi enlace">Pagina1 -</a>
@@ -55,6 +72,7 @@
             
         </div>
     </Footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

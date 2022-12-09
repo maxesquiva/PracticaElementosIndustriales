@@ -77,7 +77,7 @@ try {
     $response['message'] = '';
     $response['success'] = false;
 
-    $consultaInsert = 'UPDATE elementos SET nombre=:nombre, descripcion=:descripcion, nserie=:nserie , estado=:estado, prioridad=:prioridad, estado=:estado where id=:id';
+    $consultaInsert = 'UPDATE elementos SET nombre=:nombre, descripcion=:descripcion, nserie=:nserie , estado=:estado, prioridad=:prioridad where id=:id';
     $consultaSelect = 'SELECT * FROM elementos WHERE id=:id';
 
     $executeInsert = $db->insert($consultaInsert, $data);

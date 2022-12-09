@@ -2,10 +2,12 @@
 
 class Database
 {
-
+    // PDO representa una conexión entre PHP y un servidor de bases de datos.
     private $pdo;
 
-    // Utilizar el patron singleton en vez de la chapuza de hacer una conexion a la base de datos en cada uno de los ficheros.
+    // Utilizar el patron singleton en vez de la chapuza de hacer una conexion 
+    //a la base de datos en cada uno de los ficheros.
+
     // El constructor recibe como parametro los datos necesarios para realizar una conexion a la base de datos
     public function __construct($user, $password, $host, $port, $name)
     {
@@ -17,6 +19,7 @@ class Database
         //domain source Name -> Nombre de origen de datos
         //WRAPERS
         $dsn = 'mysql:host=' . $host . ';port=' . $port . ';dbname=' . $name;
+        //dsn nos permiten conectarnos a la bases de datos de MySQL
         $this->pdo = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
     }
 
@@ -24,7 +27,8 @@ class Database
     {
         try {
             $consulta = $this->getPDO()->query($query);
-            return $consulta->fetchAll(PDO::FETCH_ASSOC);
+            //te trae todos los datos de golpe en un array asociativo.
+            return $consulta->fetchAll(PDO::FETCH_ASSOC);//Recupera una fila de resultados como un array asociativo
         } catch (PDOException $e) {
             return null;
         }
@@ -35,7 +39,7 @@ class Database
         try {
             $consulta = $this->getPDO()->prepare($query); // ponemos la query
             $consulta->bindParam(':id', $id, PDO::PARAM_INT); // sustituimos el :id por el valor verdaero
-            $consulta->execute(); // ejecuta la consulta fin
+            $consulta->execute(); // ejecuta la consulta 
             return $consulta->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
             return null;
@@ -45,6 +49,7 @@ class Database
     public function insert($query, $data)
     {
         try {
+            //prepare() Prepara una sentencia SQL para su ejecución
             return $this->getPDO()->prepare($query)->execute($data);
         } catch (PDOException $e) {
             return null;
